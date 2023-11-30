@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --note-black: rgb(0 0 0);
+  --note-white: rgb(255 255 255);
+  --note-stone-50: rgb(250 250 249);
+  --note-stone-100: rgb(245 245 244);
+  --note-stone-200: rgb(231 229 228);
+  --note-stone-300: rgb(214 211 209);
+  --note-stone-400: rgb(168 162 158);
+  --note-stone-500: rgb(120 113 108);
+  --note-stone-600: rgb(87 83 78);
+  --note-stone-700: rgb(68 64 60);
+  --note-stone-800: rgb(41 37 36);
+  --note-stone-900: rgb(28 25 23);
+
+  --note-highlight-default: #ffffff;
+  --note-highlight-purple: #f6f3f8;
+  --note-highlight-red: #fdebeb;
+  --note-highlight-yellow: #fbf4a2;
+  --note-highlight-blue: #c1ecf9;
+  --note-highlight-green: #acf79f;
+  --note-highlight-orange: #faebdd;
+  --note-highlight-pink: #faf1f5;
+  --note-highlight-gray: #f1f1ef;
+
+  --font-title: "Cal Sans", sans-serif;
+}
+
+.dark-theme {
+  --note-black: rgb(255 255 255);
+  --note-white: rgb(25 25 25);
+  --note-stone-50: rgb(35 35 34);
+  --note-stone-100: rgb(41 37 36);
+  --note-stone-200: rgb(66 69 71);
+  --note-stone-300: rgb(112 118 123);
+  --note-stone-400: rgb(160 167 173);
+  --note-stone-500: rgb(193 199 204);
+  --note-stone-600: rgb(212 217 221);
+  --note-stone-700: rgb(229 232 235);
+  --note-stone-800: rgb(232 234 235);
+  --note-stone-900: rgb(240, 240, 241);
+
+  --note-highlight-default: #000000;
+  --note-highlight-purple: #3f2c4b;
+  --note-highlight-red: #5c1a1a;
+  --note-highlight-yellow: #5c4b1a;
+  --note-highlight-blue: #1a3d5c;
+  --note-highlight-green: #1a5c20;
+  --note-highlight-orange: #5c3a1a;
+  --note-highlight-pink: #5c1a3a;
+  --note-highlight-gray: #3a3a3a;
+}
+
+body {
+  background-color: var(--note-white);
+}
+
+@font-face {
+  font-family: "Cal Sans";
+  src:
+    local("Cal Sans"),
+    url(CalSans-SemiBold.otf) format("otf");
+}
