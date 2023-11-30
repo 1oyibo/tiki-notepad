@@ -8,7 +8,7 @@ import React from "react";
 
 export const AppContext = React.createContext<{
   font: string;
-  setFont: React.Dispatch<React.SetStateAction<string>>;
+  setFont: any;
 }>({
   font: "Default",
   setFont: () => {},
@@ -22,7 +22,7 @@ const ToasterProvider = () => {
 };
 
 export default function Providers({ children }: { children: React.ReactNode }) {
-  const [font, setFont] = useLocalStorage<string>("novel__font", "Default");
+  const [font, setFont] = useLocalStorage<string>("note__font", "Default");
 
   return (
     <ThemeProvider

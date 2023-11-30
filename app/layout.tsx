@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import Providers from "./providers";
+import { defaultFontMapper } from "@/styles/fonts";
+import { cn } from "@/lib/utils";
 
 const title = "Simple Notepad";
 const description =
